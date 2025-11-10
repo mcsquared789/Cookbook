@@ -1,0 +1,8 @@
+- Old vs New Input System
+	- Player > Other Settings > Configuration
+	- New is used in new projects by default
+	- Click old/both to be able to use old system (restart)
+
+- Stop Loading Screens Before Play Mode
+	- Editor > Enter Play Mode Settings
+	- Switch from Reload domain/scene to opposite
