@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class DroppingObject : MonoBehaviour
+public class DroppingObject : MonoBehaviour // See TriggerHazard
 {
     [SerializeField] private float timeElapsed = 3f;
     
@@ -9,12 +8,17 @@ public class DroppingObject : MonoBehaviour
     private MeshRenderer _thisMeshRenderer;
     private Rigidbody _thisRigidbody;
 
+    void Awake()
+    {
+        gameObject.SetActive(false); // Disable dropper at beginning of game
+    }
+    
     void Start()
     {
         _thisMeshRenderer = GetComponent<MeshRenderer>();
         _thisRigidbody = GetComponent<Rigidbody>();
         
-        _thisMeshRenderer.enabled = false; // Turn invsible
+        _thisMeshRenderer.enabled = false; // Turn invisible
     }
 
     void Update()
