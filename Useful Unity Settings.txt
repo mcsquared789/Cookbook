@@ -6,3 +6,8 @@
 - Stop Loading Screens Before Play Mode
 	- Editor > Enter Play Mode Settings
 	- Switch from Reload domain/scene to opposite
+
+- Change Gravity
+	- Physics > Settings > Shared
+	- Positive gravity will make rigidbodies fall up instead of down
+	- Normal Earth gravity is -9.81
